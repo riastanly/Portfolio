@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+        <nav>
+            <ul>
+                <li><a href="#landing">Me</a></li>
+                <li><a href="#edu">Education</a></li>
+                <li><a href="#exp">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="landing">
+            <div class="landing-content">
+                <div class="text-content"></div>
+                    <h1>Hi, I'm R Stanly :)</h1>
+                    <p id="typing-text"></p>
+                    <div class="button-container">
+                        <a href="#contact" class="cta-button">Get in Touch</a>
+                        <a href="images/sample_resume.pdf" class="cta-button" download>My Resume</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/" target="_blank" class="social-icon">
+                            <img src="images/linkedin.png" alt="LinkedIn">
+                        </a>
+                        <a href="https://github.com/zephyr003" target="_blank" class="social-icon">
+                            <img src="images/github-icon-1024x1024-2xll1q60.png" alt="GitHub">
+                        </a>
+                        <a href="https://www.youtube.com/@Zephyrrr" target="_blank" class="social-icon">
+                            <img src="images/youtube.png" alt="YouTube">
+                        </a>
+                        <a href="mailto:rstanly003@gmail.com" class="social-icon">
+                            <img src="images/mail.png" alt="Email">
+                        </a>
+                    </div>
+                    <div class="quotes">
+                        <h2>Quote of the Day:</h2>
+                        <p id="random-quote"></p>
+                    </div>
+                </div>
+                <div class="photo-content">
+                    <img src="images/profile.jpg" alt="Ria Stanly Keecheril's Photo" class="profile-photo">
+                </div>
+            </div>
+        </section>        
+        <section id="edu">
+            <h2>Education</h2>
+            <div class="colleges">
+                <div class="college-text">
+                    <h3>Muthoot Institute of Technology and Science, Varikoli</h3>
+                    <h5><i>2021-2025</i></h5>
+                    <p>Currently pursuing BTech. degree in Computer Science and Engineering with a CGPA of <strong>9.54.</strong></p>
+                </div>
+                <div class="college-logo">
+                    <img src="images/mits.png" alt="Institute Logo" class="institute-logo">
+                </div>
+            </div>
+            <h3>Some Projects I did >_<</h3>
+            <div class="projects">
+                <div class="project-box">
+                    <h4>MineDefuser - a 2D Game developed using Pygame [College Mini Project]</h4>
+                    <a href="https://github.com/zephyr003/MineDefuser-MiniProject-.git" class="cta-button" target="_blank">Check it out</a>
+                </div>
+                <div class="project-box">
+                    <h4>Student Management System [Course Project]</h4>
+                    <a href="https://github.com/zephyr003/Student-Management-System.git" class="cta-button" target="_blank">Check it out</a>
+                </div>
+            </div>
+            <a href="https://github.com/zephyr003/" class="more-button">More Projects</a>
+        </section>                           
+        <section id="exp">
+            <h2>Experience</h2>
+            <div class="company">
+                <div class="company-text">
+                    <h3>Software Development Intern - Vivish Technologies Pvt Ltd, Kochi</h3>
+                    <h5><i>Mygate, Aug 2021-Present</i></h5>
+                    <ul>
+                        <li>Currently undergoing training in Flutter for mobile app development, as well as the MERN stack and full-stack development.</li>
+                        <li>Gaining hands-on experience in a professional development environment and contributing to various aspects of software projects.</li>
+                        <li>Learning about industry practices and methodologies while integrating into the team and understanding company workflows.</li>
+                    </ul>
+                </div>
+                <div class="company-logo">
+                    <img src="images/mygatelogo.png" alt="mygate logo" class="mygate-logo">
+                </div>
+            </div>
+        </section>        
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-cont">
+                <div class="skill-box">
+                    <img src="images/1005142.png" alt="coding" class="skill-icon">
+                    <h4>Programming Languages</h4>
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>Java</li>
+                        <li>SQL</li>
+                        <li>Dart</li>
+                    </ul>
+                </div>
+                <div class="skill-box">
+                    <img src="images/2210153.png" alt="webdev" class="skill-icon">
+                    <h4>Software Development</h4>
+                    <ul class="skill-list">
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python/Django</li>
+                        <li>React.js</li>
+                        <li>Flutter</li>
+                    </ul>
+                </div>
+                <div class="skill-box">
+                    <img src="images/9850812.png" alt="db" class="skill-icon">
+                    <h4>Database Management</h4>
+                    <ul class="skill-list">
+                        <li>SQL</li>
+                        <li>MySQL</li>
+                        <li>SQLPlus</li>
+                        <li>SQLite</li>
+                        <li>NoSQL</li>
+                    </ul>
+                </div>
+            </div>
+        </section>        
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me using the form below:</p>
+            <div class="contact-form">
+                <form action="">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </section>        
+</body>
+</html>
